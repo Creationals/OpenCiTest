@@ -6,8 +6,6 @@ services:
   - mysql
   
 before_install:
-  - mysql -e create database db_example; -- Creates the new database
-  - mysql -e create user 'springuser'@'%' identified by 'ThePassword';
-  - mysql -e grant all on db_example.* to 'springuser'@'%';
+  - mysql -u root --password="" < test/travis.sql
 
 script: mvn clean install
