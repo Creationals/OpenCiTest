@@ -2,3 +2,5 @@
 Test repo Travis CI
 
 Just some fake code to test CI
+
+Some additional text
