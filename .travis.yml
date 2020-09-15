@@ -11,7 +11,7 @@ before_install:
 notifications:  
   email:  
     recipients:  
-    - $TRAVIS_EMAIL_JOOST  
+    - $TRAVIS_EMAIL_JOOST
     on_success: always
     on_failure: always
 
