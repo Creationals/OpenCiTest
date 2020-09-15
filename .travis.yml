@@ -8,4 +8,11 @@ services:
 before_install:
   - mysql -u root --password="" < test/travis.sql
 
+notifications:  
+  email:  
+    recipients:  
+    - $TRAVIS_EMAIL_JOOST  
+    on_success: change
+    on_failure: always
+
 script: mvn clean install
