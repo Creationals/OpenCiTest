@@ -11,8 +11,8 @@ before_install:
 notifications:  
   email:  
     recipients:  
-    - TRAVIS_EMAIL_JOOST  
-    on_success: change
+    - $TRAVIS_EMAIL_JOOST  
+    on_success: always
     on_failure: always
 
 script: mvn clean install
