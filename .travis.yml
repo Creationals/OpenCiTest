@@ -10,6 +10,6 @@ services:
   - mysql
   
 before_install:
-  - mysql -u root --password="" < test/travis.sql
+  - mysql -u root --password="" < sql/travis-init.sql
 
 script: mvn clean install
