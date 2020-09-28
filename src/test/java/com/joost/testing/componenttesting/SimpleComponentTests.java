@@ -9,6 +9,7 @@ public class SimpleComponentTests {
     @Test
     public void aSimpleComponentTest(){
         assertEquals(1, 1, "10 x 0 must be 0");
+        assertEquals(2, 2, "10 x 0 must be 0");
     }
 
 }
