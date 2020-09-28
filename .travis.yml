@@ -15,5 +15,5 @@ before_install:
 jobs:
     include:
         - stage: "Maven clean install"
-        - script: mvn clean install
+          script: mvn clean install
 
