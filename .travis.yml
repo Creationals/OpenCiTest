@@ -15,6 +15,7 @@ before_install:
 jobs:
     include:
         - stage: Main job
-            - script: mvn clean install
-            - script: mvn test -Pcomponent-tests
+            script: 
+                - mvn clean install
+                - mvn test -Pcomponent-tests
 
