@@ -12,4 +12,8 @@ services:
 before_install:
   - mysql -u root --password="" < sql/travis-init.sql
 
-script: mvn clean install
+jobs:
+    include:
+        - stage: "Maven clean install"
+        - script: mvn clean install
+
