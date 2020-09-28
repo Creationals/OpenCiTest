@@ -14,6 +14,7 @@ before_install:
 
 jobs:
     include:
-        - stage: "Maven clean install"
+        - stage: Main job
           script: mvn clean install
+          script: mvn test -Pcomponent-tests
 
