@@ -13,5 +13,8 @@ before_install:
   - mysql -u root --password="" < sql/travis-init.sql
 
 script: 
-    - mvn clean install && mvn test -Pcomponent-tests
+    - >
+        mvn clean install && 
+        mvn test -Pcomponent-tests surefire:test
+
 
