@@ -12,10 +12,6 @@ services:
 before_install:
   - mysql -u root --password="" < sql/travis-init.sql
 
-jobs:
-    include:
-        - stage: Main job
-            script: 
-                - mvn clean install
-                - mvn test -Pcomponent-tests
+script: 
+    - mvn clean install && mvn test -Pcomponent-tests
 
